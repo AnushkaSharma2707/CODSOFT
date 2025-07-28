@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="htps://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000"><span>Anushka Sharma</span></div>
+            <div class="links">
+               <div class="link" data-aos="fade-up" data-aos-duration="1000">
+                <a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000">
+                <a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000">
+                <a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000">
+                <a href="blogs.html">Blogs</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000">
+                <a href="contact.html">Contact</a></div>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Skills</a>
+                    <a href="">Blogs</a>
+                    <a href="">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="section-container">
+            <div data-aos="zoom-in-right" data-aos-duration="2500">
+                <a href="image2.png"><img src="image2.png" alt="logo" class="image"></a>
+            </div>
+        <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">My name is <span>Anushka</span> <br>I am a <span>Web Developer</span></h1>
+            <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                I am a dedicated web developer focused on building modern, responsive, and accessible web applications. I specialize in both front-end and back-end development, using technologies like HTML, CSS, JavaScript, React, and Node.js. My goal is to create seamless digital experiences that combine functionality with strong visual design. I enjoy solving problems, optimizing performance, and writing maintainable code. Whether working on a team or independently, I’m always driven to learn and improve. I'm excited to take on new challenges and bring ideas to life on the web.
+            </p>
+            <div class="app-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                <a href="CV.pdf"><button>Download CV/Resume</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function hamburg(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(0px)"
+    }
+    function cancel(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform = "translateY(0px)"
+    }
+</script>
+</body>
+</html>
